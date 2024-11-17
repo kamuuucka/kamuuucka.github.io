@@ -1,0 +1,267 @@
+/* --- GENERAL SETTINGS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    height: auto;
+    border-radius: 25px;
+}
+
+/* --- BODY --- */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+body.dark-theme{
+    color:#f4f4f4;
+    background-color: #333;
+}
+
+body.dark-theme .overlay-content{
+    background-color: #333;
+}
+
+/* --- MENU --- */
+
+#menu{
+    background-color: #333;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+ul li{
+    height: 100%;
+}
+
+ul li:hover{
+    background-color: #252525;
+}
+
+ul li a:hover{
+    color: #785243;
+}
+
+li#name{
+    width: auto;
+}
+
+li#name a{
+    justify-content: flex-start;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+}
+
+li#title{
+    width: 37vw;
+    pointer-events: none;
+}
+
+li#title a{
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+li#button{
+    width: 7vw;
+}
+
+li#button a{
+    padding-top: 1vh;
+}
+
+li a{
+    height: 100%;
+    color: antiquewhite;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+}
+
+/* --- PANEL --- */
+
+.panel-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel{
+    max-width: 80%;
+    margin-top: 1vh;
+    padding: 2%;
+}
+
+.panel h1{
+    padding-bottom: 1%;
+    font-size: 5vh;
+}
+
+/* --- PROJECT DESCRIPTION --- */
+
+#project-description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#project-description .video{
+    text-align: center;
+}
+
+#project-description .video iframe {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+/* --- CONTENT --- */
+#project-description .content {
+    display: flex;
+    margin-top: 2vh;
+    text-align: justify;
+    line-height: 2.2vh;
+}
+
+#project-description .column1 {
+    flex: 3;
+    padding-right: 2vw;
+}
+
+#project-description .column1 .description{
+    margin-bottom: 2vh;
+}
+
+#project-description .column1 .description a{
+    display: inline-block;
+    margin-top: 1vh;
+    font-weight: bold;
+    color: #785243;
+}
+
+#project-description .column1 .description a:hover{
+    color:#4d342b;
+}
+
+#project-description .column2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+/* --- IMAGES --- */
+#project-description .column2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional: Make images look nicer */
+}
+
+/* --- RESPONSIBILITIES --- */
+
+.responsibilities ul{
+    list-style-type: disc;
+    margin: 1em 0;
+    padding-left: 2em;
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.responsibilities li {
+    display: list-item; 
+    margin: 0.5em 0;
+    background-color: transparent;
+}
+
+.responsibilities li:hover {
+    background-color: transparent;
+}
+
+.responsibilities li a {
+    display: inline;
+    color: inherit;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.responsibilities li a:hover {
+    color: inherit;
+}
+
+/* --- TOOLS --- */
+
+.tool-panel{
+    display: flex;
+    flex-direction: column;
+}
+
+.tool-panel a{
+    text-decoration: none;
+    color:#785243;
+}
+
+.tool-panel a#check-tool{
+    font-weight: bold;
+}
+
+.tool-panel a:hover{
+    color: #4d342b;
+}
+
+.tool-panel .row{
+    display: flex;
+    gap: 2vw;
+    text-align: justify;
+    margin-bottom: 2vh;
+    line-height: 2.2vh;
+}
+
+.tool-panel .row p{
+    flex: 3;
+}
+
+.tool-panel .row img{
+    flex: 1;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    text-align: center;
+    padding: 1%;
+    background-color: #333;
+    color: antiquewhite;
+    margin-top: 2%;
+}
+
+footer a{
+    color:antiquewhite;
+}
+
+footer a:hover{
+    color:#785243;
+}

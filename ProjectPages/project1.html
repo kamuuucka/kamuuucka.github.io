@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Projects</title>
+    <link rel="stylesheet" href="projectPageStyle.css">
+</head>
+
+<body>
+
+    <section id="menu">
+        <ul>
+            <li class="home" id="name"><a href="/index.html">Kamila Matuszak</a></li>
+            <li id="title"><a>Technical Designer</a></li>
+            <li class="right" id="button"><a href="/projects.html">Projects</a></li>
+            <li class="right" id="button"><a href="/about.asp">Resume</a></li>
+        </ul>
+    </section>
+
+
+    <section class="panel-section" id="project-description">
+        <div class="panel">
+            <h1> Swamp Unleashed </h1>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/RGk9yHNVWaw?si=7ITy98YUoGy95Igo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+                <div class="column1">
+                    <div class="description">
+                        <p><i>Swamp Unleashed</i> is an endless runner that takes players through three layers of the
+                            Internet. In this game, two players work together to achieve the highest score possible while
+                            navigating a variety of obstacles. Players can approach these challenges in several ways: by
+                            running around, jumping over, sliding under, or balancing on beams.</p>
+                        <p>The game has no definitive endpoint; it continuously speeds up until it becomes unplayable. Along
+                            the way, players encounter anonymous creatures at crossroads that offer guidance on whether to
+                            go left or right. These creatures can lead players toward more surface-level layers of the
+                            Internet or deeper into its darker recesses, illustrating the dangers of online exploration and
+                            the potential harm from unexpected sources.</p>
+                        <p>With a focus on creating a cooperative experience, <i>Swamp Unleashed</i> emphasizes the
+                            importance of working together in a society that often leans towards individualism. Since the
+                            game was showcased at a festival, we ensured that it is accessible to players of all ages. While
+                            some areas of the game feature creepier elements, we maintained a family-friendly atmosphere by
+                            avoiding any graphic content.</p>
+                        <a href="https://plamczak66.itch.io/swamp-unleashed">Download the game here! </a>
+                    </div>
+                    <div class="responsibilities">
+                        <h3>Responsibilities</h3>
+                        <ul>
+                            <li> Lead of the engineer (programmer) team (me and one other engineer) </li>
+                            <li> Procedurally generated path for the endless runner created with the "chunks"
+                            </li>
+                            <li> Creating a custom Editor Script for the generator to allow easy and convienient setup for
+                                the designers </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column2">
+                    <img src="/Images/SwampUnleashed/people_playing.jpg"
+                        alt="People playing the game at the Overkill Festival" class="most-recent-picture">
+                    <img src="/Images/SwampUnleashed/game_background.png" alt="Environment in the game"
+                        class="most-recent-picture">
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <section class="panel-section">
+        <div class="panel">
+            <h1> Tools Created </h1>
+
+            <div class="tool-panel">
+                <h2>Random Road Generator</h2>
+                <div class="row">
+                    <img src="/Images/SwampUnleashed/ToolRoad.png" alt="Project picture" class="most-recent-picture">
+                    <p><br>For this project I created a tool that is responsible for generating infinite road for our
+                        game. The road is being generated from "road chunks" - already premade parts of the road. We
+                        wanted our world to look in a ceertain way, so we could not let the objects spawn completely
+                        random. The logic behind it was based on the way that <i><a
+                                href="https://store.steampowered.com/app/113200/The_Binding_of_Isaac/">The Binding of
+                                Isaac</a></i> generates its levels.</p>
+                </div>
+                <div class="row">
+                    <p>The generator was created using one script: <i>Road Generator.</i> First thing that can be seen
+                        is the description at the top of the script. I included there short description together with
+                        two important tips.<br><br> Right below there is a Warning Field. I decided to use the warning
+                        mark to make sure that user won't miss this part. It was a manual about how to set up the "road
+                        chunks" in the correct way. Otherwise the generator will not spawn the road correctly. If I had
+                        more time, I would change it in the way that it wouldn't be necessary. Sadly at the moment of
+                        creating the tool, I did not have enough time nor knowledge.<br><br> The SETTINGS section is
+                        used to control the generation. Here the user can control how fast will the road chunks
+                        disappear after the player passes them, how many "road chunks" should be spawned at once, after
+                        how many pieces the generator should spawn a crossroad, and what is the size of the whole map.
+                        The size of the map was necessary to make sure that the player never gets too far from the (0,0)
+                        position. Unity does not handle it well.<br><br> The ROAD section was the list where the user
+                        had to add the "road chunks". Thye could add as many pieces as desired, but had to make sure
+                        that the order follows the one described in the manual.
+                    </p>
+                    <img src="/Images/SwampUnleashed/Tool1.png" alt="Project picture" class="most-recent-picture">
+                </div>
+                <div class="row">
+                    <img src="/Images/SwampUnleashed/Tool2.png" alt="Project picture" class="most-recent-picture">
+                    <p>An important thing that got requested by the designers was a <i>Debug Mode.</i> They wanted to be
+                        able to adjust specific things without going into the code. So I created the Debug
+                        section.<br><br> There the user can show the border - important while testing if the generation
+                        works properly. <br><br> The second part is called <i>Advanced Settings</i>. Those are the
+                        settings that should not be changed if absolutely necessary.</p>
+                </div>
+                <a id="check-tool" href="https://github.com/kamuuucka/RandomRoadGenerator">Check out the tool here!</a>
+            </div>
+        </div>
+       
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2024 My Portfolio | Contact: <a href="mailto: matuszakamila@gmail.com">matuszakamila@gmail.com</a></p>
+    </footer>
+
+    <script src="/ProjectPages/script.js"></script>
+</body>
+
+</html>

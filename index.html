@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamila Matuszak - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <section id="menu">
+        <ul>
+            <li class="home" id="name"><a href="index.html">Kamila Matuszak</a></li>
+            <li id="title"><a>Technical Designer</a></li>
+            <li class="right" id="button"><a href="#" id="settings-btn">Website Tools</a></li>
+            <li class="right" id="button"><a href="projects.html">Projects</a></li>
+            <li class="right" id="button"><a href="about.asp">Resume</a></li>
+        </ul>
+    </section>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+    <div id="settings-overlay" class="overlay">
+        <div class="overlay-content">
+            <h2>Settings</h2>
+            <button id="close-btn">&times;</button>
 
+            <div class="settings-container">
+                <h4>Font Size</h4>
+                <input type="range" id="font-slider" min="10" max="64" value="16">
+                <button id="font-reset">Reset</button>
+            </div>
+            <div class="settings-container" id="checkbox-container">
+                <h4>Change your theme</h4>
+                <label id="checkbox-label">Dark Mode: Off</label>
+                <input type="checkbox" id="theme">
+            </div>
+            <div class="settings-container" id="swapping-container">
+                <h4>Swap the order of elements</h4>
+                <button id="swap-btn">Swap</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="panel-section" id="section1">
+        <div class="panel">
+            <h2> About Me </h2>
+            <div class="about-me-content">
+                <div class="about-me-text">
+                    <p id="centered"> My name is <b>Kamila</b> and I am an aspiring <b>Technical Designer</b>.<br> I
+                        specialise in creating various <b>tools in Unity</b>.</p>
+                    <p id="justified"> My passion lies in making other developer's lives easier. In addition to tool
+                        development, I often come up with ideas for enhancing game mechanics or bringing even the most
+                        unconventional concepts of Game Designers to life.<br>Currently, I am in my final year of the
+                        Creative Media and Game Technologies program at Saxion University of Applied Sciences. Alongside
+                        my studies, I work as a developer at Serious XR, where I focus on creating products that have a
+                        real-world impact.</p>
+                </div>
+
+                <img src="Images/IMG_1507.JPG" alt="Picture of me" class="about-me-picture">
+            </div>
+        </div>
+    </section>
+
+    <section class="panel-section" id="section2">
+        <div class="panel">
+            <h2> Most Recent Project </h2>
+            <div class="most-recent-content">
+                <div class="column" id="column1">
+                    <a href="ProjectPages/project1.html">
+                        <img src="Images/SwampUnleashed/TitleScreen.png" alt="Project picture" class="most-recent-picture">
+                    </a>
+                    <h4>My Role:</h4>
+                    <p>Programmer | Technical Designer</p>
+                    <a href="https://plamczak66.itch.io/swamp-unleashed" id="download">Download Page</a>
+                </div>
+                <div class="column" id="column2">
+                    <p> You know how difficult it is to catch up with the Internet? How easily you can get lost and get
+                        from a video of a cute cat to the whole theory about how pyramids were built by the aliens? In
+                        our game you can experience it.<br><br>
+                        Together with your friend run through the 3 layers of the Internet: surface web, deep web and
+                        dark web. Help each other to get the highest score possible. Be careful on the crossroads! The
+                        anonymous users might try to lead you to the "worse" parts of the online world.<br><br>
+                        This project was made for an Overkill Festival 2023 in Enschede. The topic was "the outburst of
+                        digital swamp".</p>
+
+                    <div class="skills">
+                        <h4> Skills learned:</h4>
+                        <p>collaboration and communication <span id="colored">|</span> project ideation and concept development <span id="colored">|</span> client
+                            interaction <span id="colored">|</span> procedural generation <span id="colored">|</span> custom editor scripting <span id="colored">|</span> tool development <span id="colored">|</span>
+                            optimisation and performance management</p>
+                    </div>
+                    <p id="read-more">
+                        <a href="ProjectPages/project1.html"><i>Read More...</i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio | Contact: <a href="mailto: matuszakamila@gmail.com">matuszakamila@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
